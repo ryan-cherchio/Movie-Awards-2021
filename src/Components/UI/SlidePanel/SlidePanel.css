@@ -1,0 +1,68 @@
+.sidepanel {
+    position: fixed;
+    color: #0D2436;
+    left: 0;
+    top: 0;
+    width: 30rem;
+    height: 100%;
+    background: white;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 26%);
+    z-index: 100;
+    overflow:scroll;
+}
+
+.sidepanel h2 {
+  margin: 0;
+  padding: 1rem;
+  background: #8e8e8e;
+  color: #fff;
+  border-radius: 0;
+}
+.sidepanel li {
+    text-align:left;
+    list-style: none;
+    padding: 0px 30px 20px;
+}
+.sidepanel li h4 {
+  margin: 0;
+}
+.sidepanel li p {
+  margin: 0;
+}
+
+.sidepanel .close-button {
+    top:14px;
+}
+.sidepanel__actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidepanel .slidecard-panel {
+    background:#f7f7f7;
+    padding:10px;
+}
+.sidepanel .slidecard-panel h4 {
+    background:#ececec;
+    padding:10px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+}
+@media (max-width: 768px) {
+  .sidepanel {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
